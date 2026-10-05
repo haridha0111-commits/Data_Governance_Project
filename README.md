@@ -16,7 +16,6 @@ Open `index.html` in a current browser. It is a static application with no insta
 ## Contents
 
 - `Project-Guide.md` — problem statement, scope, operating model, A–Z method, roles, deliverables, measures, risks, and source-informed design notes.
-- `Interview-Story.md` — concise project walkthrough and likely interview questions.
 - `sources.md` — primary UK sources checked on 2 September 2026, with notes on what each supports.
 - `index.html` — functioning local catalogue prototype.
 - `data/data_assets.csv` — synthetic catalogue starter records.
