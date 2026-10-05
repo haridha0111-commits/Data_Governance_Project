@@ -1,0 +1,8 @@
+term,definition,business_owner,status,synonyms,linked_assets
+Customer,"A person or organisation that holds, applies for, or receives a bank product or service in the scope of this illustrative project.",Customer Data Office,Approved,"Client; retail customer",D-001
+Account status,"Controlled state describing an account at a point in time. Values and transition rules must be owned by the Deposits Product domain.",Deposits Product,Approved,Lifecycle status,D-002
+Consumer outcome,"An observed result experienced by a retail customer in relation to a product or service. Measures and interpretation are context-specific.",Customer Outcomes Office,Approved,Customer outcome,"D-003|D-004|D-007"
+Vulnerable circumstance,"A circumstance that may make a customer especially susceptible to harm, particularly when a firm is not acting with appropriate levels of care. Do not infer a person's status from proxy features without review.",Customer Support,Approved,Customer vulnerability,"D-001|D-009"
+Fraud alert,"A model-generated prioritisation signal for investigation. It is not, by itself, a confirmed fraud finding or an adverse customer decision.",Financial Crime Analytics,Approved,Alert score,"D-005|D-006"
+AI use case,"A defined purpose, population, decision context, system boundary, owner and lifecycle record for an AI-enabled capability.",AI Governance Office,Approved,"AI application; model use","AI-001|AI-002"
+Human review,"A documented review by an appropriately trained person with relevant information, authority, time and ability to change or reject an AI output.",Operations Risk,Approved,Human intervention,"AI-001|AI-002"

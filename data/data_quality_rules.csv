@@ -1,0 +1,9 @@
+rule_id,asset,element,rule_definition,target_threshold,severity,owner,failure_handling
+DQ-01,D-001 Customer,customer_key,Not null and unique in current customer snapshot,100%,Critical,Customer Data Steward,"Block downstream publication; log data-quality incident"
+DQ-02,D-002 Account,customer_key,Every active account links to a valid customer key,≥ 99.9%,High,Deposits Data Steward,"Quarantine unresolved rows and investigate referential integrity"
+DQ-03,D-003 Customer contact outcome,interaction_date,Date is valid and not in the future,100%,High,Service MI Steward,"Reject invalid event; retain source trace"
+DQ-04,D-004 Complaint,resolution_status,Value belongs to the steward-approved code set,≥ 99.5%,High,Complaints Steward,"Map only via approved rule; never silently coerce unknown values"
+DQ-05,D-006 Fraud alert features,feature_timestamp,Feature timestamp is at or before scoring timestamp,100%,Critical,Fraud Analytics Steward,"Fail scoring batch; use approved fallback queue"
+DQ-06,D-007 Consumer outcomes mart,reporting_period,All included records fall inside declared reporting window,100%,High,Outcomes MI Steward,"Block board MI refresh; publish known limitation"
+DQ-07,D-009 Vulnerability support indicator,permitted_use,"Use is approved for this purpose and aggregation; field-level access is restricted",100% approval,Critical,"Customer Data Steward + Privacy","Stop use pending privacy and purpose review"
+DQ-08,D-010 Model decision log,model_version,Every scored decision references a registered model version,100%,Critical,AI Governance Office,"Hold release and reconcile registry to scoring logs"
